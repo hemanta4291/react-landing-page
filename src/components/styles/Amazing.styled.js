@@ -14,7 +14,7 @@ export const AmazingWrapper = styled.div`
 
 export const FlexAmazingContainer = styled.div`
     display: flex;
-    align-items: ${({alignItem})=> alignItem? alignItem : "center"};
+    align-items: ${({alignitem})=> alignitem? alignitem : "center"};
     justify-content: ${({justify})=> justify? justify : "space-between"};
     grid-gap: ${({gap})=> gap? gap : ""};
 
@@ -25,6 +25,11 @@ export const FlexAmazingContainer = styled.div`
 
 export const AmazingLeft = styled.div`
     flex-basis: 40%;
+
+
+    & h3 {
+        font-size: ${({theme})=>theme.fontSize.h4_font_size};
+    }
      /* responsive */
      @media only screen and (max-width: ${({theme})=>theme.breakPoint.tab}){
         flex-basis: 100%;

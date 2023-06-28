@@ -8,7 +8,7 @@ export const ButtonLargeContained = styled.button`
     font-weight: ${({theme})=>theme.fontWeight.fw_400};
     letter-spacing: ${({theme})=>theme.letterSpacing.ls_065};
     border-radius: 60px;
-    padding: 20px 40px;
+    padding: 19px 40px;
     cursor: pointer;
     flex-shrink: 0;
     transition: all linear 0.3s;
@@ -30,7 +30,7 @@ export const ButtonLargeOutline = styled.button`
     font-weight: ${({theme})=>theme.fontWeight.fw_400};
     letter-spacing: ${({theme})=>theme.letterSpacing.ls_065};
     border-radius: 60px;
-    padding: 20px 40px;
+    padding: 19px 35px;
     cursor: pointer;
     flex-shrink: 0;
     transition: all linear 0.3s;
@@ -97,7 +97,7 @@ export const ButtonSmallContained = styled.button`
     line-height: ${({theme})=>theme.lineHeight.lh_16};
     letter-spacing: ${({theme})=>theme.letterSpacing.ls_04};
     border-radius: 60px;
-    padding: 14px 20px;
+    padding: ${({padding})=>padding? padding : "15px 38px" };
     cursor: pointer;
     flex-shrink: 0;
     transition: all linear 0.3s;
@@ -119,7 +119,7 @@ export const ButtonSmallOutline = styled.button`
     line-height: ${({theme})=>theme.lineHeight.lh_16};
     letter-spacing: ${({theme})=>theme.letterSpacing.ls_04};
     border-radius: 60px;
-    padding: 14px 20px;
+    padding: ${({padding})=>padding? padding : "13px 15px" };
     cursor: pointer;
     flex-shrink: 0;
     transition: all linear 0.3s;
@@ -156,7 +156,7 @@ export const ButtonExtraSmallOutline = styled.button`
     font-weight: ${({theme})=>theme.fontWeight.fw_700};
     line-height: ${({theme})=>theme.lineHeight.lh_14};
     border-radius: 60px;
-    padding: 14px 20px;
+    padding: 7px 11px;
     cursor: pointer;
     flex-shrink: 0;
     transition: all linear 0.3s;

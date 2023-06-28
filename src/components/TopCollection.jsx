@@ -68,7 +68,7 @@ const TopCollection = () => {
   return (
     <TopCollectionWrapper>
         <Container>
-            <TopFlexContainer gap="52px" alignItem="flex-start">
+            <TopFlexContainer gap="52px" alignitem="flex-start">
                 {
                     isLoading ? <LoadingText/>  : 
                     <TopCollectionLeft>

@@ -12,7 +12,7 @@ export const TopCollectionWrapper = styled.div`
 
 export const TopFlexContainer = styled.div`
     display: flex;
-    align-items: ${({alignItem})=> alignItem? alignItem : "center"};
+    align-items: ${({alignitem})=> alignitem? alignitem : "center"};
     justify-content: ${({justify})=> justify? justify : "space-between"};
     grid-gap: ${({gap})=> gap? gap : ""};
 
@@ -165,7 +165,7 @@ export const CollectionMiddle = styled.div`
         color:${({theme})=>theme.color.green};
         font-size: ${({theme})=>theme.fontSize.body4_font_size};
         font-weight: ${({theme})=>theme.fontWeight.fw_700};
-        padding: 8px;
+        padding: 5px 8px;
         flex-shrink: 0;
 
     }

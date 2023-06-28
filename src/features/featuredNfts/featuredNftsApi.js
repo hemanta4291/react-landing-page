@@ -1,6 +1,6 @@
 
 import { featuredNtfs } from "../../demo-data/featured-ntfs-demo"
-export const getFeaturedNtfs = async(page) =>{
+export const getFeaturedNtfs = () =>{
     let status = true
     let promise = new Promise((res,rej)=>{
 
@@ -15,6 +15,6 @@ export const getFeaturedNtfs = async(page) =>{
     })
 
 
-    return await promise
+    return promise
 
 }

@@ -20,10 +20,12 @@ export const FlexHeaderContainer = styled.div`
     /* responsive */
     @media only screen and (min-width: ${({theme})=>theme.breakPoint.mobileExtra}) and (max-width: ${({theme})=>theme.breakPoint.tab}) {
         position: fixed;
+        display: block;
         background: ${({theme})=>theme.color.white};
         z-index: 9;
         flex-direction: column;
         width: 100%;
+        height:100%;
         grid-gap: 52px;
         padding: 0 10px 50px 10px;
         transform: translateX(${(props)=>props.active? "0" : "105%"});
@@ -37,8 +39,33 @@ export const FlexHeaderContainer = styled.div`
 export const HeaderLeft = styled.div`
     display: flex;
     align-items: center;
-    grid-gap: 66px;
+    grid-gap: 35px;
     flex-basis: 50%;
+
+    & .logo{
+            border-right: 1px solid ${({theme})=>theme.color.gray_3};
+            line-height: 47px;
+            display: inline-block;
+            height: 38px;
+            padding-right: 31px;
+
+
+
+            & a{
+                display: inline-flex;
+            }
+
+            @media only screen and (max-width: ${({theme})=>theme.breakPoint.tab}) {
+                border-right: 0px;
+                border-bottom: 1px solid ${({theme})=>theme.color.gray_10};
+                width:100%;
+                display: block;
+                padding-bottom: 60px;
+
+            }
+        }
+       
+    
 
     & ul{
         display: flex;
@@ -74,6 +101,8 @@ export const HeaderLeft = styled.div`
         & ul{
             flex-direction: column;
             align-items: flex-start;
+            grid-gap: 32px;
+            padding-bottom: 86px;
 
             & li{
                 height: 12px;
@@ -101,6 +130,8 @@ export const HeaderRight = styled.div`
 
 export const Input = styled.div`
     position: relative;
+
+
     & input{
         border: 1px solid ${({theme})=>theme.color.gray_10};
         border-radius: 100px;
@@ -135,6 +166,17 @@ export const Input = styled.div`
         right: 18px;
         top:7px;
     }
+
+
+
+    @media only screen and (max-width: ${({theme})=>theme.breakPoint.tab}) {
+        order:3;
+        width:100%;
+
+        & input{
+            width:100%;
+        }
+    }
 `
 
 // Close button
@@ -151,7 +193,7 @@ export const HeaderMenuClose = styled.div`
     cursor: pointer;
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 23px;
 
     & svg path{
         fill: ${({theme})=>theme.color.white};
@@ -174,6 +216,11 @@ export const HeaderForMobile = styled.div`
     width: 100%;
     padding: 0 15px;
     z-index: 9;
+
+
+    & a{
+        display: inline-flex;
+    }
 
     & div{
         display: inline-flex;

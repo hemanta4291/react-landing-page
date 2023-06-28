@@ -1,6 +1,6 @@
 
 import { topOverNtfs } from "../../demo-data/top-collection-ntfs-demo"
-export const getTopOverNtfs = async(page) =>{
+export const getTopOverNtfs = () =>{
     let status = true
     let promise = new Promise((res,rej)=>{
 
@@ -15,6 +15,6 @@ export const getTopOverNtfs = async(page) =>{
     })
 
 
-    return await promise
+    return promise
 
 }

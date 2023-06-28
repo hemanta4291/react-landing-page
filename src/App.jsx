@@ -5,7 +5,7 @@ import {theme} from './components/styles/Theme'
 import GlobalStyle from "./components/styles/Global.styled";
 import Home from './pages/Home';
 import Layout from './layout/Layout';
-import { NotFound } from './pages/NotFound';
+import NotFound  from './pages/NotFound';
 
 function App() {
 

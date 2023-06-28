@@ -14,10 +14,26 @@ import { HourMinuteSecond } from '../utils/HourMinuteSecond'
 
 const HeroSection = () => {
     const {hour,minute,second} = HourMinuteSecond()
+
+    const totalData = [
+        {
+            title:"Artwork",
+            total:98,
+        },
+        {
+            title:"Auction",
+            total:12,
+        },
+        {
+            title:"Artis",
+            total:15,
+        },
+        
+    ]
   return (
     <HeroWrapper>
         <Container>
-            <FlexHeroWrapper alignItem="flex-start">
+            <FlexHeroWrapper alignitem="flex-start">
                 <HeroLeft>
                     <h1>Discover, and collect Digital Art  NFTs </h1>
                     <p>Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</p>
@@ -26,19 +42,15 @@ const HeroSection = () => {
                             Explore Now
                         </ButtonLargeContained>
                         <HeroCount>
-                            <div>
-                                <h2>98k <FaPlus fontSize="30px"/></h2>
-                                <span>Artwork</span>
-                            </div>
-                            <div>
-                           
-                                <h2>12k <FaPlus fontSize="30px"/></h2>
-                                <span>Auction</span>
-                            </div>
-                            <div>
-                                <h2>15k <FaPlus fontSize="30px"/></h2>
-                                <span>Artis</span>
-                            </div>
+                            {
+                                totalData?.map((data)=>(
+                                    <div key={data.title}>
+                                        <h2>{data.total}k <FaPlus fontSize="26px" style={{margin:"0 0 2px -9px"}}/></h2>
+                                        <span>{data.title}</span>
+                                    </div>
+                                ))
+                            }
+                            
                         </HeroCount>
                     </ButtonWithCountWr>
                 </HeroLeft>

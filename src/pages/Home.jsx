@@ -8,7 +8,7 @@ import TopCollection from '../components/TopCollection'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <HeroSection/>
       <AmazingTransection/>
       <TopCollection/>

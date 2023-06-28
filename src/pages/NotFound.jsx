@@ -1,7 +1,12 @@
 import React from 'react'
+import { NotFoundWrapper } from '../components/styles/NotFoundWrapper.styled'
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <NotFoundWrapper>
+        <h2>Page Not Found</h2>
+    </NotFoundWrapper>
   )
 }
+
+export default NotFound

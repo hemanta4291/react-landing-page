@@ -181,6 +181,7 @@ export const DiscoverNtfsListItem = styled.div`
             font-size: ${({theme})=>theme.fontSize.body33_font_size};
             font-weight: ${({theme})=>theme.fontWeight.fw_500};
             line-height: ${({theme})=>theme.lineHeight.lh_20};
+            cursor:pointer;
         }
     }
 

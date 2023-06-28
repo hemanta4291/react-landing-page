@@ -11,12 +11,12 @@ export const HeroWrapper = styled.div`
 
 export const FlexHeroWrapper = styled.div`
     display: flex;
-    align-items: ${({alignItem})=> alignItem? alignItem : "center"};
+    align-items: ${({alignitem})=> alignitem? alignitem : "center"};
     justify-content: ${({justify})=> justify? justify : "space-between"};
     grid-gap: ${({gap})=> gap? gap : ""};
 
     @media only screen and (max-width: ${({theme})=>theme.breakPoint.tab}) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `
 
@@ -93,7 +93,7 @@ export const HeroRight = styled.div`
         }
         & .live{
             position: absolute;
-            top: 188px;
+            top: 197px;
             left: -72px;
 
             @media only screen and (max-width: ${({theme})=>theme.breakPoint.small}){
@@ -168,7 +168,7 @@ export const HeroRight = styled.div`
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 40px 0 0 0;
+        padding: 0 0 40px 0;
     }
 
     
@@ -177,7 +177,7 @@ export const BidDateBox = styled.div`
    background: ${({theme})=>theme.color.white_02_rgba};
     backdrop-filter: blur(25px);
     border-radius: 12px;
-    padding: 14px 24px;
+    padding: 13px 24px;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -187,7 +187,7 @@ export const BidDateBox = styled.div`
     width: 100%;
     left: 25px;
     max-width: 348px;
-    bottom: 30px;
+    bottom: 23px;
 
     & .bd_title{
         color: ${({theme})=>theme.color.white};
@@ -227,7 +227,8 @@ export const BidDateBox = styled.div`
 
     /* responsive */
     @media only screen and (max-width: ${({theme})=>theme.breakPoint.small}) {
-        left: 0px;
+        left: 17px;
+        width: 89%;
         max-width: 100%;
     }
 `

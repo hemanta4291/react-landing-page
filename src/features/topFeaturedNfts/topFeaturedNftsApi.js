@@ -1,7 +1,7 @@
 
 import { topFeaturedNtfs } from "../../demo-data/top-collection-featured-demo"
 
-export const getTopFeaturedNtfs = async() =>{
+export const getTopFeaturedNtfs =() =>{
     let status = true
     let promise = new Promise((res,rej)=>{
 
@@ -16,6 +16,6 @@ export const getTopFeaturedNtfs = async() =>{
     })
 
 
-    return await promise
+    return promise
 
 }

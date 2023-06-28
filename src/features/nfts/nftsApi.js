@@ -1,6 +1,6 @@
 
 import { ntfs } from "../../demo-data/ntfs-demo"
-export const getNtfs = async(page) =>{
+export const getNtfs = (page) =>{
     let status = true
     let promise = new Promise((res,rej)=>{
 
@@ -24,6 +24,6 @@ export const getNtfs = async(page) =>{
     })
 
 
-    return await promise
+    return promise
 
 }

@@ -7,7 +7,7 @@ const AmazingTransection = () => {
   return (
     <AmazingWrapper>
         <Container>
-            <FlexAmazingContainer gap="84px">
+            <FlexAmazingContainer alignitem='flex-start' gap="84px">
                 <AmazingLeft>
                     <h3>The amazing NFT art of the world here</h3>
                 </AmazingLeft>

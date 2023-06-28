@@ -6,6 +6,10 @@ import { HourMinuteSecond } from '../utils/HourMinuteSecond'
 const NtfsBox = ({item}) => {
     const {title,stock,sell,place_bid,thumbnail,bid_authors} = item
     const {hour,minute,second} = HourMinuteSecond()
+
+    const handlePlaceBid = () =>{
+        console.log(item.id)
+    }
   return (
         <DiscoverNtfsListItem>
             <div className='top_box'>
@@ -31,7 +35,7 @@ const NtfsBox = ({item}) => {
                 </div>
                 <div className='footer'>
                     <div className='f_date'><span>{hour}</span>h <span>{minute}</span>m <span>{second}</span>s <span>left</span></div>
-                    <h6>{place_bid}</h6>
+                    <h6 onClick={handlePlaceBid}>{place_bid}</h6>
                 </div>
             </div>
     </DiscoverNtfsListItem>
