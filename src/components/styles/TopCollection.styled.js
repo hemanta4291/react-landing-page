@@ -255,7 +255,7 @@ export const CollectionOverList = styled.div`
 
                 & span{
                     display: inline-flex;
-                    color: ${({theme})=>theme.color.black};
+                    color: ${({theme})=>theme.color.gray_60};
                     font-family: ${({theme})=>theme.fontFamily.Poppins};
                     font-size: ${({theme})=>theme.fontSize.body3_font_size};
                     font-weight: ${({theme})=>theme.fontWeight.fw_600};

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
     border-bottom: 1px solid ${({theme})=>theme.color.gray_10};
-    height: 100px;
+    height: 108px;
     line-height: 100px;
     @media only screen and (min-width: ${({theme})=>theme.breakPoint.mobileExtra}) and (max-width: ${({theme})=>theme.breakPoint.tab}) {
         border-bottom: 0;

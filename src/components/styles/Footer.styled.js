@@ -24,7 +24,7 @@ export const FooterContainer = styled.div`
         & li{
             color: ${({theme})=>theme.color.gray_89};
             font-size: ${({theme})=>theme.fontSize.body3_font_size};
-            font-weight: ${({theme})=>theme.fontWeight.fw_500};
+            font-weight: ${({theme})=>theme.fontWeight.fw_600};
             line-height: ${({theme})=>theme.lineHeight.lh_28};
             
             & a{
