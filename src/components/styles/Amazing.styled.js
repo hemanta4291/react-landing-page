@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AmazingWrapper = styled.div`
     background: ${({theme})=>theme.color.bg_rgba};
-    padding: 106px 0 113px 0;
+    padding: 122px 0 97px 0;
 
     @media only screen and (max-width: ${({theme})=>theme.breakPoint.mobile}){
         padding: 60px 0;

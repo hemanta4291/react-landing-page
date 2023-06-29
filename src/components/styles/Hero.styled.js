@@ -2,7 +2,7 @@ import styled from "styled-components";
 import DotImage from '../../assets/images/Dot.png'
 
 export const HeroWrapper = styled.div`
-    padding: 77px 0 122px 0;
+    padding: 57px 0 122px 0;
 
     @media only screen and (max-width: ${({theme})=>theme.breakPoint.mobile}){
         padding: 20px 0 60px 0;

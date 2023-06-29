@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TopCollectionWrapper = styled.div`
-    padding: 118px 0 134px 0;
+    padding: 134px 0 134px 0;
 
     @media only screen and (max-width: ${({theme})=>theme.breakPoint.mobile}){
         padding: 60px 0;

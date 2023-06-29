@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const DiscoverMoreWrapper = styled.div`
     background: ${({theme})=>theme.color.bg_rgba};
-    padding: 65px 0 100px 0;
+    padding: 65px 0 47px 0;
 
     & h3{
         margin: 0 0 38px 0;
