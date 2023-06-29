@@ -254,8 +254,17 @@ export const HeroCount = styled.div`
         font-size: ${({theme})=>theme.fontSize.h1_font_size};
         margin: 0 0 8px 0;
 
+
+        & svg{
+            margin:0 0 2px -9px;
+        }
+
         @media only screen and (max-width: ${({theme})=>theme.breakPoint.tab}) {
             font-size: ${({theme})=>theme.fontSize.h3_font_size};
+
+            & svg{
+                margin:0 0 -2px -9px;
+            }
         }
     }
     & span{

@@ -215,7 +215,7 @@ export const CollectionOverList = styled.div`
 
         & .count{
             color: ${({theme})=>theme.color.black};
-            font-size: ${({theme})=>theme.fontSize.h3_font_size};
+            font-size: 24px;
             font-weight: ${({theme})=>theme.fontWeight.fw_700};
             line-height: ${({theme})=>theme.lineHeight.lh_20_83};
         }

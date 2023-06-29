@@ -45,7 +45,7 @@ const HeroSection = () => {
                             {
                                 totalData?.map((data)=>(
                                     <div key={data.title}>
-                                        <h2>{data.total}k <FaPlus fontSize="26px" style={{margin:"0 0 2px -9px"}}/></h2>
+                                        <h2>{data.total}k <FaPlus fontSize="26px" /></h2>
                                         <span>{data.title}</span>
                                     </div>
                                 ))

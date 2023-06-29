@@ -18,6 +18,10 @@ export const FooterContainer = styled.div`
         font-weight: ${({theme})=>theme.fontWeight.fw_700};
         line-height: ${({theme})=>theme.lineHeight.lh_23_44};
         margin: 0 0 24px 0;
+
+        @media only screen and (max-width: ${({theme})=>theme.breakPoint.mobile}) {
+            margin: 0 0 8px 0;
+        }
     }
 
     & ul.footer_link{
@@ -163,7 +167,8 @@ export const FooterRight = styled.div`
 
             @media only screen and (max-width: ${({theme})=>theme.breakPoint.small}) {
                 width: 100%;
-                max-width: 364px;
+                max-width: 100%;
+                padding: 0 16px;
             }
         }
         
@@ -187,6 +192,11 @@ export const FooterRight = styled.div`
                 background: transparent;
                 /* border: 1px solid ${({theme})=>theme.color.secondary_dark}; */
                 color: ${({theme})=>theme.color.secondary_dark};
+            }
+
+
+            @media only screen and (max-width: ${({theme})=>theme.breakPoint.mobile}) {
+                 padding: 15px 14px;
             }
         }
     }
